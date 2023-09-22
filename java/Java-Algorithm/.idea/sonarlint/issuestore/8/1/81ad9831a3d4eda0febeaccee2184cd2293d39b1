@@ -1,0 +1,22 @@
+
+h
+java:S1192
+"FDefine a constant instead of duplicating this literal "Soeun" 5 times.(Š®Ìçøÿÿÿÿ8‡ÿÄ¼«1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’õ…úÿÿÿÿ8‰ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(çë®š8‘ÿÄ¼«1
+\
+java:S2175"?A "Map<Person, Dog>" cannot contain a "int" in a "Person" type.(çë®š8‘ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(µˆœÑ8’ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(î¿”‚8’ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(î¿”‚8’ÿÄ¼«1
+L	java:S106"+Replace this use of System.out by a logger.(å‚É¶úÿÿÿÿ8“ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(çÁ×ú8“ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(µˆœÑ8”ÿÄ¼«1
+L	java:S106"+Replace this use of System.out by a logger.(„„ÿ¾ûÿÿÿÿ8”ÿÄ¼«1
+I
+java:S1602",Remove useless curly braces around statement(õ™îú8”ÿÄ¼«1
+G	java:S106"+Replace this use of System.out by a logger.(ÓşŠ©8”ÿÄ¼«1
+G	java:S106""+Replace this use of System.out by a logger.(”ÁÊÒ8”ÿÄ¼«1
+G	java:S106$"+Replace this use of System.out by a logger.(‰àÆ8•ÿÄ¼«1
+K
+java:S1144")Remove this unused private "maps" method.(É»Ö†ÿÿÿÿÿ8˜ÿÄ¼«1

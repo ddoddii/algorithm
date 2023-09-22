@@ -1,0 +1,7 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’õž…úÿÿÿÿ8ƒ“”Ù«1
+Z
+java:S1854"=Remove this useless assignment to local variable "cookieTwo".(ôË›‡8îôºÙ«1
+K
+java:S1481".Remove this unused "cookieTwo" local variable.(ôË›‡8ñôºÙ«1
+L	java:S106"+Replace this use of System.out by a logger.(ÈÒÇ·ùÿÿÿÿ8òôºÙ«1
