@@ -30,3 +30,5 @@ V
 &src/DataStructure/LinkedList/Main.java,b/f/bf062ebf59003f69c632efa1b1c1234cf545d608
 \
 ,src/DataStructure/LinkedList/LinkedList.java,a/3/a3b41923c21e47204d95cbf8fac2fcbac6670874
+B
+src/PointTest.java,6/a/6abd91e3f0848dd235f6b4169f2a5d6215c45281
