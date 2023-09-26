@@ -1,2 +1,9 @@
 python/MIT Algorithms
 *.pdf
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.vscode/
+**/.idea
+java/Java-Algorithm/.idea
+*.xml
