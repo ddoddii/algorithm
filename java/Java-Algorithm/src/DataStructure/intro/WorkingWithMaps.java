@@ -1,8 +1,6 @@
 package DataStructure.intro;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class WorkingWithMaps {
     public static void main(String[] args) {
@@ -12,6 +10,25 @@ public class WorkingWithMaps {
         System.out.println(map);
         System.out.println(new Person("Soeun",26).hashCode());
         System.out.println(new Person("Soeun",26).hashCode());
+
+        HashMap< Integer, String> map2 = new HashMap<Integer, String>();
+        map2.put(1, "candy");
+        map2.put(2, "chocolate");
+        map2.put(3, "milk");
+
+        Set set = map2.entrySet();
+        System.out.println(set);
+
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+        queue.offer(11); //queue에 삽입
+        queue.offer(22);
+        queue.poll();
+        queue.peek();
+
+        ListIterator<Integer> it = queue.listIterator();
+        if (it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 
     private static void maps() {

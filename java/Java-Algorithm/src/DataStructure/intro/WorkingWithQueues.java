@@ -20,6 +20,11 @@ public class WorkingWithQueues {
             System.out.println(personListIterator.previous());
         }
 
+        Queue q = new LinkedList();
+        q.offer(1);
+        q.offer(2);
+        System.out.println(q.remove());
+        System.out.println(q.poll());
     }
 
     public static void queues() {

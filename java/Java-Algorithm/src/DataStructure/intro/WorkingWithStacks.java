@@ -13,5 +13,12 @@ public class WorkingWithStacks {
         System.out.println(stack.size());
         System.out.println(stack.empty());
 
+        for (Integer i : stack){
+            System.out.println("stack: "+ i );
+        }
+
+        System.out.println(stack.search(3)); // 배열과 달리 위치가 1부터 시작!
+
+
     }
 }
