@@ -1,6 +1,5 @@
 #1. 책 페이지 비교를 통해 이긴 사람 구하기 
 
-
 def solution(pobi, crong):
     if pobi[0] % 2 != 1 or (pobi[1] - pobi[0]) != 1 or pobi[1] % 2 != 0 :
         return -1
