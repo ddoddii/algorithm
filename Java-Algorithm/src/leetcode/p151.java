@@ -14,7 +14,6 @@ public class p151 {
         Collections.reverse(wordList);
         return String.join(" ", wordList);
 
-
     }
 
     public static void main(String[] args) {
