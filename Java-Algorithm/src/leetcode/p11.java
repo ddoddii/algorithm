@@ -1,7 +1,7 @@
 package leetcode;
 
 //11. Container with most water
-public class p11 {
+public class P11 {
     //sol1. O(n^2)
     public static int maxArea(int[] height) {
         int maxAmount = Integer.MIN_VALUE;
