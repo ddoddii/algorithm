@@ -23,3 +23,16 @@
 - 배열 내 순서를 바꾸거나 할 때 sorting 알고리즘과 pointer를 떠올리자 -> Quicksort, Megersort .. 
 - 배열([]) 내 원소를 삭제하고 싶을 때, ArrayList 로 변환 해서 remove 메서드를 쓰는 것은 계산량이 많다. 최악의 경우 O(n) 이다. 
 우회적인 방법으로 HashMap 안에 원소들과 등장 빈도를 저장해두고 삭제하고 싶으면 등장빈도 - 1 하는 것을 생각해보자. 
+- 어떤 배열A 내 원소가 다른 배열B 안에 포함되어 있는지를 보고 싶을 때 -> B 에 HashSet 을 사용하자
+
+  ```java
+  Set<Character> vowels = new HashSet<>(Arrays.asList('a','e','i','o','u'));
+  char[] strArr = s.toCharArray();
+  int count = 0;
+  
+  for (int i = 0 ; i < strArr.length ; i++){
+      if (vowels.contains(strArr[i])){
+          count++;
+      }
+  }
+  ```
