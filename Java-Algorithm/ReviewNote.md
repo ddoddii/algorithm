@@ -36,3 +36,5 @@
       }
   }
   ```
+  
+- Integer 배열 내에서 max / min 값 구할때, `Arrays.stream(intArr).max().getAsInt()` 를 사용하는 방법과 for 문을 사용하는 방법이 있는데, for 문을 사용하는것이 시간 상 더 빨랐다. 
