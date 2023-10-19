@@ -8,13 +8,6 @@ public class problem4 {
 
         System.out.println(solution(word));
 
-
-
-
-
-
-
-
     }
     static String solution(String word){
         StringBuilder result = new StringBuilder();
@@ -31,12 +24,11 @@ public class problem4 {
         }
         return result.toString();
 
-
     }
 
     static char flipLarge(char ch){
-       char flippedLarge = (char) (155 - (int)ch);
-       return flippedLarge;
+        char flippedLarge = (char) (155 - (int)ch);
+        return flippedLarge;
     }
 
     static char flipSmall(char ch){
