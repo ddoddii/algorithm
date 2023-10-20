@@ -1,7 +1,9 @@
 package leetcode;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 // 933. Number of Recent Calls
 public class P933 {
@@ -34,5 +36,23 @@ class RecentCounter {
       requestTime.remove(0);
     }
     return requestTime.size();
+  }
+}
+
+//sol2. Using Queue
+class RecentCounter2 {
+
+  Queue<Integer> q;
+
+  public RecentCounter2() {
+    q = new LinkedList<>();
+  }
+
+  public int ping(int t) {
+    q.add(t);
+    while (q.peek() < t - 3000) {
+      q.poll();
+    }
+    return q.size();
   }
 }
