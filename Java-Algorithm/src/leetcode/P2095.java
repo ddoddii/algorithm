@@ -2,26 +2,6 @@ package leetcode;
 
 // 2095. Delete the Middle Node of a Linked List
 public class P2095 {
-
-  static class ListNode {
-
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-      this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-      this.val = val;
-      this.next = next;
-    }
-
-  }
-
   class solution {
 
     public ListNode deleteMiddle(ListNode head) {
