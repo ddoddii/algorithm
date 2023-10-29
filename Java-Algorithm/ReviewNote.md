@@ -37,4 +37,29 @@
   }
   ```
   
-- Integer 배열 내에서 max / min 값 구할때, `Arrays.stream(intArr).max().getAsInt()` 를 사용하는 방법과 for 문을 사용하는 방법이 있는데, for 문을 사용하는것이 시간 상 더 빨랐다. 
+- Integer 배열 내에서 max / min 값 구할때, `Arrays.stream(intArr).max().getAsInt()` 를 사용하는 방법과 for 문을 사용하는 방법이 있는데, for 문을 사용하는것이 시간 상 더 빨랐다.
+- BFS 에서는 queue 를 사용하자. Binary Tree 에서 queue 를 이용해서 가장 오른쪽 노드를 추가하는 코드
+  ```java
+  List<Integer> traverse(TreeNode node, List<Integer> answer, Queue<TreeNode> q) {
+    if (node == null) {
+        return answer;
+    }
+    q.add(node);
+    while (!q.isEmpty()) {
+        int levelSize = q.size();
+        for (int i = 0; i < levelSize; i++) {
+            TreeNode currentNode = q.poll();
+            if (i == levelSize - 1) {
+                answer.add(currentNode.val);
+            }
+            if (currentNode.left != null) {
+                q.add(currentNode.left);
+            }
+            if (currentNode.right != null) {
+                q.add(currentNode.right);
+            }
+        }
+    }
+    return answer;
+  }
+  ```
