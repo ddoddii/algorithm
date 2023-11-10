@@ -1,6 +1,5 @@
 package leetcode;
 
-import java.awt.GridBagConstraints;
 import java.util.LinkedList;
 import java.util.Queue;
 import org.junit.jupiter.api.Assertions;
@@ -34,7 +33,7 @@ public class P994 {
     public int bfs(int[][] grid, Queue<int[]> q, int freshOranges) {
         int time = 0;
         int[][] directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-        while(!q.isEmpty() && freshOranges > 0) {
+        while (!q.isEmpty() && freshOranges > 0) {
             int size = q.size();
             for (int i = 0; i < size; i++) {
                 int[] curr = q.poll();
@@ -48,7 +47,7 @@ public class P994 {
                     }
                 }
             }
-            if (freshOranges >= 0 ) {
+            if (freshOranges >= 0) {
                 time++;
             }
         }
