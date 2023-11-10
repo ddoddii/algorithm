@@ -6,6 +6,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Set;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 // 1926. Nearest Exit from Entrance in Maze
 public class P1926 {
@@ -73,7 +75,8 @@ public class P1926 {
         return (i == 0 || i == size - 1);
     }
 
-    public static void main(String[] args) {
+    @Test
+    void testMaze(){
         char[][] maze = {
                 {'+', '+', '+'},
                 {'.', '.', '.'},
@@ -82,9 +85,9 @@ public class P1926 {
         int[] entrance = {1, 0};
 
         P1926 p1926 = new P1926();
-        System.out.println(p1926.nearestExit(maze, entrance));
-
+        Assertions.assertEquals(2,p1926.nearestExit(maze,entrance));
     }
+
 
 
 }
