@@ -6,6 +6,11 @@
 - 배열 out of index error 항상 생각
 
 ### 문자열
+- 람다식 활용
+    `data = sorted(data, key = lambda x : len(x))`
+- list(map) 활용
+    `list(map(int, item.split(',')))`
+
 
 ## Algorithm Study 
 1. Linked Lists
