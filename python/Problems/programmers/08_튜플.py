@@ -11,6 +11,16 @@ def solution(s):
                 answer.append(value)
     return answer
 
+def solution2(s):
+    answer = {}
+    s = sorted(s[2:-2].split("},{"), key = len)
+    for tuples in s:
+        elements = tuples.split(',')
+        for element in elements:
+            number = int(element)
+            answer[number] = 1
+    return list(answer)
 
-
-
+s = "{{2},{2,1},{2,1,3},{2,1,3,4}}"
+s = sorted(s[2:-2].split("},{"), key = len)
+print(s)
