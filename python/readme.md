@@ -11,6 +11,23 @@
 - list(map) 활용
     `list(map(int, item.split(',')))`
 
+### Walrus assignment
+:=을 기준으로
+1. 왼쪽에 있는 변수(variable)에
+2. 오른쪽의 표현(expression)을
+3. 값(value)으로써
+4. 할당(assignment)함과 동시에
+5. 표현(expression)으로써의 기능을 수행하게 해준다.
+
+```python
+a = "안녕하세요 저는 Readme입니다"
+if (n := len(a)) > 10:
+    print(sentence := f"Sentence is {n} long, longer than 10)")
+print(n, sentence)
+# 18 Sentence is 18 long, longer than 10)
+```
+
+
 
 ## Algorithm Study 
 1. Linked Lists
