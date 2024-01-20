@@ -18,16 +18,6 @@ class Solution:
             cash = max(cash, hold + price - fee)
         return cash
 
-    def maxProfit2(self, prices: List[int], fee: int) -> int:
-        w_shares = -prices[0]  # cash in hand with shares if you bought on day1
-        wo_shares = 0  # cash if you didn't buy in day1
-
-        for i in range(1, len(prices)):
-            # max cash in hand with shares
-            w_shares = max(
-                w_shares,
-            )
-
 
 prices = [1, 3, 2, 8, 4, 9]
 fee = 2
