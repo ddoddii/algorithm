@@ -22,3 +22,25 @@ def solution(n, results):
         if count == n - 1:
             answer += 1
     return answer
+
+
+# 그래프 - 플로이드 워셜 기법
+def solution2(n, results):
+    answer = 0
+    total = [[0 for _ in range(n)] for _ in range(n)]
+    for i in range(n):
+        total[i][i] = -1
+    for result in results:
+        total[result[0] - 1][result[1] - 1] = "WIN"
+        total[result[1] - 1][result[0] - 1] = "LOSE"
+    for k in range(n):
+        for i in range(n):
+            for j in range(n):
+                if total[i][k] == "WIN" and total[k][j] == "WIN":
+                    total[i][j] = "WIN"
+                elif total[i][k] == "LOSE" and total[k][j] == "LOSE":
+                    total[i][j] = "LOSE"
+    for i in total:
+        if 0 not in i:
+            answer += 1
+    return answer
