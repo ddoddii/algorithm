@@ -30,4 +30,7 @@ def solution(gems):
 
 
 gems = ["ZZZ", "YYY", "NNNN", "YYY", "BBB"]
-print(solution2(gems))
+print(solution(gems))
+
+print(format(int("111"), "x"))
+print(int("111", 2))
