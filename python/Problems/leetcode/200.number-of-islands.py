@@ -42,7 +42,7 @@ class Solution:
                     cnt = 1
                     dfs(i, j, cnt)
                     islands.append(cnt)
-
+        print(islands)
         return len(islands)
 
 
