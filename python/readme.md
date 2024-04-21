@@ -75,6 +75,49 @@ print(nums) # [6, 7, 0, 1, 2, 3, 4, 5]
 
 </details>
 
+<details>
+    <summary><h3>Bitwise opreation</h3></summary>
+
+- **AND(&)**
+  - `AND` : 두 비트가 모두 1일 때만 1
+  - a ^ a = 1
+
+    ```python
+    a = 6  # 110
+    print(a & 1) # 0 (& : AND -> 1 & 1 인 경우만 1, 가장 마지막 비트가 1인 경우만 1)
+    a >>= 1 # >>1 : 나누기 2^1 = shift right
+    print(a & 1) # 1 
+    a >>= 1
+    print(a & 1) # 1
+    ```
+
+- **XOR(^)**
+  - `XOR` : 두 비트가 다를때만 1
+  - a ^ a = 0, a ^ 0 = a, a ^ b ^ a = b (XOR는 교환, 결합법칙 성립)
+  
+    ```python
+    x, y = 8, 10 # x = 1000, y = 1010
+    x ^= y # XOR : 두 비트가 다르면 1, x = 0010 // x = x^y
+    print(x) # 2 
+    y ^= x # XOR : 두 비트가 다르면 1, y = 1000  // y = y^x = y^x^y = x : 교환됨 
+    print(y) # 8
+    x ^= y # XOR : x = 1010 // x = x^y = x^y^x = y : 교환됨
+    print(x) # 10
+    ```
+
+- **OR(|)**
+  - `OR` : 두 비트 중 1개만 1이면 1, 두 비트 모두 0일때만 0
+
+- **Shift Left(<<)**
+  - `A << B` : A를 B비트만큼 왼쪽으로 밀기
+  - `a << 2` : a * (2^2)
+
+- **Shift Right(>>)**
+  - `A >> B` : A를 B비트만큼 오른쪽으로 밀기
+  - `a >> 2` : a / (2^2)
+
+
+</details>
 
 ## Algorithm Study 
 1. Linked Lists
