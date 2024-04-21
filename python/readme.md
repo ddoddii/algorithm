@@ -52,6 +52,29 @@ def solution(grid):
 
 </details>
 
+<details>
+    <summary><h3>python list slicing</h3></summary>
+
+```python
+nums = [0, 1, 2, 3, 4, 5, 6, 7]
+print(nums[2:]) # [2, 3, 4, 5, 6, 7]
+print(nums[-2:]) # [6, 7] (뒤에서 2번째 인덱스 이상)
+print(nums[:2]) # [0, 1] (앞에서 2번째 인덱스 미만)
+print(nums[:-2]) # [0, 1, 2, 3, 4, 5] (뒤에서 2번째 인덱스 미만)
+print(nums[1:5:3]) # [1, 4] (인덱스1 이상 5미만 중 간격 3)
+print(nums[::-1]) # [7, 6, 5, 4, 3, 2, 1, 0] (거꾸로 뒤집기)
+print(nums[::-2]) # [7, 5, 3, 1] (뒤집는데 간격 2)
+ 
+
+# nums rotate by k
+k = 2
+nums[:] = nums[-k:] + nums[:-k]
+print(nums) # [6, 7, 0, 1, 2, 3, 4, 5]
+```
+
+
+</details>
+
 
 ## Algorithm Study 
 1. Linked Lists
