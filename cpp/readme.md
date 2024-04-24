@@ -114,7 +114,7 @@ void functionPointers()
 ### Delete
 
 - 동적 메모리를 할당해제 한다. 즉, 포인터 p가 가리키고 있던 동적 메모리를 할당 해제한다. 
-- `delete p` 를 하면, 메모리는 사라지지만 p는 여전히 그곳을 가리킨다(dangling pointer). 이것을 해결하려면 `p = Null` 을 명시해줘야 한다. 
+- `delete p` 를 하면, 메모리는 사라지지만 p는 여전히 그곳을 가리킨다(dangling pointer). 이것을 해결하려면 `p = NULL` 을 명시해줘야 한다. 
 
 </details>
 
@@ -144,7 +144,7 @@ int main()
     ```cpp
     d = new double[10];
     delete[] d;
-    d = Null;
+    d = NULL;
     ```
 
 ```cpp
@@ -154,11 +154,21 @@ int main()
     cout << "size : ";
     cin >> size;
     int *myArray = new int[size]; // size allocated at runtime
+
+    for (int i=0; i<size ; i++) {
+        cout << "Array[" <<i << "] ";
+        cin >> myArray[i]
+    }
+
+    for (int i=0; i<size ; i++) {
+        // cout << myArray[i] << " ";
+        cout << *(myArray+i) << " ";
+    }
+
+    delete[] myArray; // memory deallocation
+    myArray = NULL; // prevent pointer dangling
 }
 ```
-
-
-
 
 ### Pointers & Arrays
 
@@ -193,6 +203,8 @@ void arrayPointers()
 
 - array pointer 는 CONSTANT 포인터이다. 
 - array 변수는 `const int*` 타입이다.
+
+### Multi-dimensional Arrays
 
 
 </details>
