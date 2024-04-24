@@ -6,11 +6,18 @@ Swap Function
 
 #include <iostream>
 
-void swap(int *a, int *b)
+void swap(int *a, int *b) // take pointers
 {
     int temp = *a;
     *a = *b;
     *b = temp;
+}
+
+void swap2(int &a, int &b) // use call-by-reference (& : reference type)
+{
+    int temp = a;
+    a = b;
+    b = temp;
 }
 
 int main()
@@ -22,6 +29,14 @@ int main()
     swap(&num1, &num2);
 
     std::cout << "After swap: num1 = " << num1 << ", num2 = " << num2 << std::endl;
+
+    int num3 = 30, num4 = 40;
+
+    std::cout << "Before swap: num3 = " << num3 << ", num4 = " << num4 << std::endl;
+
+    swap2(num3, num4);
+
+    std::cout << "After swap: num3 = " << num4 << ", num4 = " << num4 << std::endl;
 
     return 0;
 }
