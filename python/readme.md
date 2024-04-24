@@ -1,4 +1,4 @@
-## Review 🌷
+## Review <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Snake.png" alt="Snake" width="25" height="25" />
 
 <details>
     <summary><h3>python 에서 mutable, immutable</h3></summary>
