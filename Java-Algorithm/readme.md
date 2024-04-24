@@ -1,4 +1,4 @@
-## Review Note 
+## Review <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Food/Cookie.png" alt="Cookie" width="30" height="30" />
 
 - Array 에서 배열의 길이 추적하는 방법 (leetcode p443)
   - array[idx++] 를 사용 
