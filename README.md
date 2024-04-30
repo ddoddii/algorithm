@@ -2,7 +2,7 @@
 
 ![![Leetcode Stats]](https://leetcard.jacoblin.cool/ddoddii?theme=light&font=Do%20Hyeon&ext=activity)
 
-![LeetCode Badges](https://leetcode-badge-showcase.vercel.app/api?username=ddoddii)
+<img src="https://leetcode-badge-showcase.vercel.app/api?username=ddoddii" alt="LeetCode Badges"/>
 
 ##  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Link.png" alt="Link" width="35" height="35" /> : Links
 
