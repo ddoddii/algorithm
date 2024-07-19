@@ -128,7 +128,18 @@ print(nums) # [6, 7, 0, 1, 2, 3, 4, 5]
 </details>
 
 <details>
-    <summary><h3>Backtracking</h3></summary>
+    <summary><h3>Backtracking Tip</h3></summary>
+
+"Compute All", "Exhaust All" may imply it is a backtracking problem.
+
+- **choices**
+  - core choices we make each step
+  - what decision space can we choose from?
+- **constraints**
+  - what limited space do we need to validate? (ex. sudocu - same col/row)
+  - if this is valid, we recurse on our decision
+- **goals**
+  - what is our base case?
 
 ```c
 void Backtrack(res,args)
@@ -136,6 +147,7 @@ void Backtrack(res,args)
     add solution to res
     return 
 
+  // Explore all choices
   for (int i=0; i < NUMBER_OF_CHOICES; i++)
     if (CHOICES[i] is valid) 
       make choices[i]
@@ -147,6 +159,7 @@ void Backtrack(res,args)
 </details>
 
 ## Algorithm Study 
+
 1. Linked Lists
 2. Doubly Linked Lists
 3. Stacks & Queues
@@ -162,6 +175,7 @@ void Backtrack(res,args)
 13. Tree Traversal
 
 ## 학습 자료
+
 - Python Data Structures & Algorithms , Udemy
 - Leetcode excersises 
 - Programmers
