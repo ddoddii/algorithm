@@ -119,6 +119,33 @@ print(nums) # [6, 7, 0, 1, 2, 3, 4, 5]
 
 </details>
 
+
+<details>
+    <summary><h3>유용한 string 관련 함수</h3></summary>
+
+- `A.startswith(B) -> Boolean` : A가 B문자열로 시작하는지 반환
+
+</details>
+
+<details>
+    <summary><h3>Backtracking</h3></summary>
+
+```c
+void Backtrack(res,args)
+  if (GOAL REACHED)
+    add solution to res
+    return 
+
+  for (int i=0; i < NUMBER_OF_CHOICES; i++)
+    if (CHOICES[i] is valid) 
+      make choices[i]
+      Backtrack(res, args)
+      undo choices[i]
+```
+
+
+</details>
+
 ## Algorithm Study 
 1. Linked Lists
 2. Doubly Linked Lists
